@@ -1,0 +1,56 @@
+{
+    "id": 0,
+    "reference": "string",
+    "siteName": "string",
+    "siteId": 0,
+    "purchaseOrderId": 0,
+    "dangerousGoodNote": "string",
+    "customer": "string",
+    "images": [
+        {
+            "imageType": "string",
+            "document": "string",
+            "imagePaths": [
+                "string"
+            ],
+            "base64Data": [
+                "string"
+            ]
+        }
+    ],
+    "createdBy": "string",
+    "receivedDate": "string",
+    "partInventories": [
+        {
+            "id": 0,
+            "quantity": 0,
+            "siteName": "string",
+            "partMasterPartNumber": "string",
+            "inventoryType": "NEW",
+            "partDescription": "string",
+            "partFunction": "string",
+            "currency": "string",
+            "price": 0,
+            "isGoodPart": true,
+            "isSerialisePart": true,
+            "serialNumber": "string",
+            "partShipmentId": 0,
+            "partMaterial": "string",
+            "partTypeId": 0,
+            "partTypeDescription": "string",
+            "partLocations": [
+                {
+                    "id": 0,
+                    "partInventoryId": 0,
+                    "locationId": 0,
+                    "name": "string",
+                    "locationType": "string",
+                    "description": "string",
+                    "quantity": 0,
+                    "inventoryType": "string",
+                    "siteName": "string"
+                }
+            ]
+        }
+    ]
+}

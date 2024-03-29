@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Main_Menu from './Components/MainMenu/Main_Menu';
+import Battery_Menu from './Components/Battery/Battery_Menu'; // Updated import
+import Parts_Menu from './Components/PartsMenu/Parts_Menu';
+import ReplacementOrder from './Components/ReplacementOrder/ReplacementOrder';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Main_Menu />
+      <Routes>
+        <Route path="/Battery_Menu" element={<Battery_Menu />} />
+        <Route path="/Parts_Menu" element={<Parts_Menu />} />
+        <Route path="/ReplacementOrder" element={<ReplacementOrder />} />
+        {/* ... other routes if needed */}
+      </Routes>
+    </BrowserRouter>
   );
 }
 
 export default App;
+

@@ -1,0 +1,41 @@
+.main-menu {
+    background-color: #f0f0f0; 
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .main-menu h1 {
+    margin-bottom: 20px; 
+    font-size: 2rem;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 800;
+    text-transform: initial;
+
+  }
+  
+  .menu-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Noto Sans", sans-serif;
+    margin: 2rem;
+  
+}
+
+  
+  .menu-item {
+    background-color: #030354; 
+    color: #ffffff; 
+    font-size: 1rem;
+    padding: 20px;
+    margin: 0 10px; 
+    flex-basis: calc(33.333% - 20px); 
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer; 
+  }
+  
+  .menu-item:hover {
+    background-color: #4f4feecd; 
+    color: black;
+  }
