@@ -1,15 +1,22 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Main_Menu.css'; 
 
 const Main_Menu = () => {
+  const navigate = useNavigate();
+
+  const redirectToMain = () => {
+    let path = '/Main_Menu';
+    navigate(path);
+  }
+
   return (
     <div className="main-menu">
-      <h1>MAIN MENU</h1>
+      <h1 onClick={redirectToMain}>MAIN MENU</h1>
       <div className="menu-items">
-        <Link to="/Battery_Menu" className="menu-item">BATTERY</Link>
-        <Link to="/Parts_Menu" className="menu-item">PART</Link>
-        <Link to="/ReplacementOrder" className="menu-item">REPLACEMENT WORKS ORDER</Link>
+        <Link type="button" to="/Battery_Menu" className="btn btn-primary main-btn">BATTERY</Link>
+        <Link type="button" to="/Parts_Menu" className="btn btn-primary main-btn">PART</Link>
+        <Link type="button" to="/ReplacementOrder" className="btn btn-primary main-btn">REPLACEMENT WORKS ORDER</Link>
       </div>
     </div>
   );

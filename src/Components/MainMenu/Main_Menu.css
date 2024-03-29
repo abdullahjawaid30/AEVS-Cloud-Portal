@@ -10,6 +10,7 @@
     font-family: "Noto Sans", sans-serif;
     font-weight: 800;
     text-transform: initial;
+    cursor: pointer;
 
   }
   
@@ -23,7 +24,7 @@
 }
 
   
-  .menu-item {
+  .main-btn {
     background-color: #030354; 
     color: #ffffff; 
     font-size: 1rem;
@@ -35,7 +36,7 @@
     cursor: pointer; 
   }
   
-  .menu-item:hover {
+  .main-btn:hover {
     background-color: #4f4feecd; 
     color: black;
   }
