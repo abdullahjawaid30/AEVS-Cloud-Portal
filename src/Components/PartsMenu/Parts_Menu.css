@@ -1,137 +1,43 @@
 .parts-menu {
-  background-color: rgba(18, 136, 136, 0.283);
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center horizontally */
-  justify-content: center;
-  height: 100vh; /* Center vertically */
+  align-items: center;
+  background: #f4f4f4; 
   padding: 20px;
 }
 
-.parts-menu h1 {
-  margin: 0;
-  font-size: 2.5rem;
-  font-family: "Noto Sans", sans-serif;
-  font-weight: 800;
-  text-transform: capitalize;
-  cursor: pointer;
-}
-
-.menu-item {
-  display: flex;
-  justify-content: center; /* Center buttons horizontally */
-  gap: 10px; /* Increased gap between buttons */
-  margin-top: 20px;
-}
-
-.menu-item .btn-primary {
-  margin: 5px;
-  padding: 20px 30px; /* Adjusted padding */
-  font-size: 1rem;
-}
-
-@media (max-width: 768px) {
-  .menu-item .btn-primary {
-    padding: 15px 20px; /* Adjusted padding for smaller screens */
-  }
-}
-
-
-
-
-
-
-
-
-.form-container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.form-group {
-  margin-bottom: 15px;
-  width: 50%;
-  padding: 0 1rem;
-}
-
-.half-width {
-  width: 50%;
-  float: left;
-}
-
-.clear-fix {
-  clear: both;
-}
-
-.form-label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.form-input {
-  width: calc(100% - 16px); /* Adjusted width */
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.form-btn {
-  display: flex;
-  justify-content: space-between; /* Adjusted distance between buttons */
-  padding: 20px 0; /* Adjusted padding */
-}
-
-.btn {
-  padding: 12px 24px; /* Increased length of buttons */
-  margin-right: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.btn-danger {
-  background-color: #dc3545;
-  color: white;
-  border: none;
-}
-
-.btn-danger:hover {
-  background-color: #c82333;
-}
-
-.btn-primary {
-  background-color: #007bff;
-  color: white;
-  border: none;
-}
-
-.btn-primary:hover {
-  background-color: #0056b3;
-}
-
-
-.inventory-form {
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin: 20px;
-}
-
-.inventory-form .form-label {
-  display: block;
-  margin-bottom: 5px;
-}
-.inventory-form .checkbox-group {
-  margin-bottom: 10px;
-}
-
-.inventory-form .form-input {
+.heading {
+  text-align: left;
   width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-bottom: 10px;
+  font-size: 24px; 
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
 }
 
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-gap: 20px; 
+  width: 100%; 
+  max-width: 600px; 
+}
+
+.menu-link {
+  background-color: #003366;
+  color: white;
+  display: block;
+  padding: 10px 20px; 
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px; 
+  text-decoration: none; 
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+  transition: background-color 0.3s;
+}
+
+.menu-link:hover {
+  background-color: #004c99; 
+}

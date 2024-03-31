@@ -1,5 +1,5 @@
 import React from 'react';
-import './Battery_Menu.css'; 
+import './BatteryMenu.css'; 
 
 const Battery_Menu = () => {
     return (

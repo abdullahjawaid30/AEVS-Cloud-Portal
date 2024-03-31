@@ -1,0 +1,50 @@
+.main-menu {
+  background-color: #f0f0f0; 
+  padding: 20px;
+  text-align: center;
+  margin: 5rem auto;
+  max-width: 80%; 
+}
+
+.main-menu h1 {
+  margin-bottom: 20px; 
+  font-size: 2rem;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 800;
+  text-transform: initial;
+  cursor: pointer;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Sans", sans-serif;
+  margin: 2rem -10px; 
+}
+
+.main-btn {
+  background-color: #030354; 
+  color: #ffffff; 
+  font-size: 0.9rem; /* Decrease font size */
+  padding: 8px 12px; /* Decrease padding */
+  margin: 8px; /* Decrease margin */
+  flex-grow: 1; 
+  max-width: calc(33.333% - 16px); /* Adjust max-width */
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.main-btn:hover {
+  background-color: #4f4feecd; 
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+}
+
+@media (max-width: 768px) {
+  .main-btn {
+    max-width: calc(50% - 16px); 
+  }
+}

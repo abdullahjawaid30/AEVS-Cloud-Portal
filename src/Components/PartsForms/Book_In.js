@@ -6,7 +6,8 @@ const Book_In = () => {
   const [showFirstForm, setShowFirstForm] = useState(true);
   const [showNextForm, setShowNextForm] = useState(false);
 
-  const handleSubmit = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
     setShowFirstForm(false);
     setShowNextForm(true);
   };
@@ -16,55 +17,49 @@ const Book_In = () => {
       {showFirstForm && (
         <div className="form-container">
           <form>
-            <div className="form-group half-width">
+            <div className="form-group">
               <label htmlFor="deliveryRef" className="form-label">
                 Delivery Ref *
               </label>
               <input
                 type="text"
                 id="deliveryRef"
-                className="form-input"
+                className="form-input half-width"
                 required
               />
-            </div>
-            <div className="form-group half-width">
               <label htmlFor="dgnNo" className="form-label">
                 DGN No
               </label>
-              <input type="text" id="dgnNo" className="form-input" />
+              <input type="text" id="dgnNo" className="form-input half-width" />
             </div>
-            <div className="clear-fix"></div>
-            <div className="form-group half-width">
+            <div className="form-group">
               <label htmlFor="site" className="form-label">
                 Site *
               </label>
-              <select id="site" className="form-input" required>
+              <select id="site" className="form-input half-width" required>
                 <option value="">--SELECT--</option>
                 {/* Additional options here */}
               </select>
-            </div>
-            <div className="form-group half-width">
               <label htmlFor="customer" className="form-label">
                 Customer *
               </label>
-              <select id="customer" className="form-input" required>
+              <select id="customer" className="form-input half-width" required>
                 <option value="">--SELECT--</option>
                 {/* Additional options here */}
               </select>
             </div>
-            <div className="clear-fix"></div>
-            <div className="form-group">
+            <div className="form-group full-width">
               <label htmlFor="date" className="form-label">
                 Date
               </label>
               <input type="date" id="date" className="form-input" />
             </div>
-            <div className="form-btn">
-              <button type="button" className="btn btn-danger">
+            <div className="form-btns">
+              <button type="button" className="btn btn-cancel">
                 Cancel
               </button>
               <button
-                type="button"
+                type="submit"
                 className="btn btn-primary"
                 onClick={handleSubmit}
               >
